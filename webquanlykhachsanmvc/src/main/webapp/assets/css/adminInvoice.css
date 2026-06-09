@@ -1,0 +1,175 @@
+:root {
+  --primary-gold: #bc9c64;
+  --dark-luxury: #1a1a1a;
+  --bg-body: #f4f6f9;
+  --card-border: #eaedf3;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-body);
+  font-size: 0.88rem;
+}
+
+.page-header {
+  background: #ffffff;
+  padding: 14px 30px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.page-title span {
+  color: var(--primary-gold);
+  font-weight: 400;
+  font-size: 0.82rem;
+  margin-left: 10px;
+  border-left: 2px solid var(--card-border);
+  padding-left: 12px;
+}
+
+.btn-back {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: #f4f6f9;
+  border: 1px solid var(--card-border);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-back:hover {
+  background-color: var(--dark-luxury);
+  color: #ffffff;
+  border-color: var(--dark-luxury);
+}
+
+.table-container {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  padding: 8px;
+}
+
+.table-admin {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.table-admin thead th {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding: 11px 14px;
+  border-bottom: 2px solid var(--card-border);
+}
+
+.table-admin tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.table-admin tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table-admin tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.table-admin tbody td {
+  padding: 11px 14px;
+  font-size: 0.83rem;
+  color: #334155;
+}
+
+.id-cell {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--dark-luxury);
+}
+
+.price-cell {
+  font-weight: 700;
+  color: var(--primary-gold);
+  min-width: 150px;
+  white-space: nowrap;
+}
+
+.badge-invoice {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 7px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-invoice.paid {
+  background: rgba(46, 213, 115, 0.1);
+  color: #16a34a;
+}
+
+.badge-invoice.unpaid {
+  background: rgba(255, 165, 2, 0.12);
+  color: #d97706;
+}
+
+.btn-pay {
+  background: var(--dark-luxury);
+  color: #ffffff;
+  border: none;
+  padding: 6px 13px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-pay:hover {
+  background: var(--primary-gold);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-done {
+  background: #f1f5f9;
+  color: #94a3b8;
+  border: none;
+  padding: 6px 13px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}

@@ -1,0 +1,211 @@
+:root {
+  --primary-gold: #bc9c64;
+  --dark-luxury: #1a1a1a;
+  --soft-gray: #f8f9fa;
+  --border-color: #e2e8f0;
+  --success-color: #2ed573;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+  color: #2d3748;
+}
+
+.booking-master-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.booking-image-panel {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: var(--dark-luxury);
+}
+
+.booking-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 380px;
+  transition: transform 0.8s ease;
+}
+
+.booking-master-card:hover .booking-img {
+  transform: scale(1.03);
+}
+
+.image-overlay-badge {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 10px;
+  border-left: 3px solid var(--primary-gold);
+}
+
+.overlay-label {
+  font-size: 0.7rem;
+  color: #a0aec0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+}
+
+.overlay-value {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.booking-form-panel {
+  padding: 28px 32px;
+}
+
+.booking-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.room-status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--success-color);
+  background-color: rgba(46, 213, 115, 0.1);
+  padding: 4px 11px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.btn-back-luxury {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  text-decoration: none;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background-color: var(--soft-gray);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.btn-back-luxury:hover {
+  background-color: var(--dark-luxury);
+  color: #ffffff;
+  border-color: var(--dark-luxury);
+}
+
+.spec-grid {
+  background-color: var(--soft-gray);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  padding: 5px 0;
+}
+
+.spec-item:not(:last-child) {
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.spec-label {
+  color: #718096;
+}
+
+.spec-value {
+  font-weight: 600;
+  color: var(--dark-luxury);
+  min-width: 130px;
+  text-align: right;
+  word-break: break-word;
+}
+
+.spec-value.price {
+  color: var(--primary-gold);
+  font-size: 0.95rem;
+  min-width: 150px;
+}
+
+.form-label-luxury {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-date-luxury {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 9px 13px;
+  font-size: 0.88rem;
+  background-color: var(--soft-gray);
+  color: var(--dark-luxury);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.input-date-luxury:focus {
+  background-color: #ffffff;
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px rgba(188, 156, 100, 0.15);
+  outline: none;
+}
+
+.btn-confirm-luxury {
+  background: var(--dark-luxury);
+  color: #ffffff;
+  border: 1px solid var(--dark-luxury);
+  border-radius: 10px;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-confirm-luxury:hover {
+  background: var(--primary-gold);
+  border-color: var(--primary-gold);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(188, 156, 100, 0.25);
+}
+
+.alert-luxury {
+  border: none;
+  background-color: rgba(255, 71, 87, 0.08);
+  color: #ff4757;
+  font-size: 0.83rem;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 3px solid #ff4757;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,209 @@
+:root {
+  --primary-gold: #bc9c64;
+  --dark-luxury: #1a1a1a;
+  --soft-gray: #f8f9fa;
+  --border-color: #e2e8f0;
+  --success-color: #2ed573;
+  --danger-color: #ff4757;
+  --warning-color: #ffa502;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f8;
+  color: #2d3748;
+  font-size: 0.875rem;
+}
+
+/* ── Header Card ── */
+.header-card {
+  background-color: var(--dark-luxury);
+  border-bottom: 3px solid var(--primary-gold);
+  border-radius: 13px !important;
+  overflow: hidden;
+}
+
+.header-title {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+}
+
+.header-title span {
+  color: var(--primary-gold);
+}
+
+/* ── Component Cards ── */
+.custom-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 13px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02) !important;
+  overflow: hidden;
+}
+
+.card-header-luxury {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px 20px;
+}
+
+.card-header-luxury .panel-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-luxury);
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Form Controls ── */
+.form-control-luxury,
+.form-select-luxury {
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-size: 0.83rem;
+  background-color: var(--soft-gray);
+  transition: all 0.3s ease;
+}
+
+.form-control-luxury:focus,
+.form-select-luxury:focus {
+  background-color: #fff;
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px rgba(188, 156, 100, 0.15);
+}
+
+.form-label-luxury {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* ── Buttons ── */
+.btn-luxury {
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-size: 0.83rem;
+  transition: all 0.2s ease;
+}
+
+.btn-luxury:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Table ── */
+.table-responsive-luxury {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.table-luxury {
+  margin-bottom: 0;
+}
+
+.table-luxury thead {
+  background-color: var(--dark-luxury);
+  color: #ffffff;
+}
+
+.table-luxury thead th {
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding: 11px 13px;
+  border: none;
+  white-space: nowrap;
+}
+
+.table-luxury tbody td {
+  padding: 10px 13px;
+  font-size: 0.83rem;
+  border-bottom: 1px solid var(--border-color);
+  color: #4a5568;
+  vertical-align: middle;
+}
+
+.table-luxury tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-luxury tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+/* ── Price cell ── */
+.price-cell {
+  min-width: 140px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+/* ── Status Badges ── */
+.badge-premium {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-empty {
+  background-color: rgba(46, 213, 115, 0.15);
+  color: #26af58;
+}
+.badge-booked {
+  background-color: rgba(255, 165, 2, 0.15);
+  color: #dd8d00;
+}
+.badge-maintenance {
+  background-color: rgba(255, 71, 87, 0.15);
+  color: #e33545;
+}
+
+/* ── Inline edit form inside table ── */
+.table-inline-input {
+  padding: 5px 9px;
+  font-size: 0.78rem;
+  border-radius: 6px;
+}
+
+.table-inline-select {
+  padding: 5px 22px 5px 9px;
+  font-size: 0.78rem;
+  border-radius: 6px;
+}
+
+.inline-edit-box {
+  padding: 10px;
+  background: var(--soft-gray);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+/* ── Error alert ── */
+.alert-luxury {
+  background: rgba(255, 71, 87, 0.08);
+  color: #ff4757;
+  border-radius: 9px;
+  border-left: 3px solid #ff4757;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 20px 14px;
+  font-size: 0.83rem;
+}

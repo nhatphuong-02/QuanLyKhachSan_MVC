@@ -1,0 +1,187 @@
+:root {
+  --primary-gold: #bc9c64;
+  --dark-luxury: #1a1a1a;
+  --bg-body: #f4f6f9;
+  --card-border: #eaedf3;
+  --accent-revenue: #27ae60;
+  --accent-booking: #2980b9;
+  --accent-customer: #e67e22;
+  --accent-room-empty: #16a085;
+  --accent-room-occ: #c0392b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-body);
+  color: #333333;
+  letter-spacing: -0.1px;
+}
+
+.dashboard-header {
+  background: #ffffff;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+}
+
+.dashboard-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.dashboard-title span {
+  color: var(--primary-gold);
+  font-weight: 400;
+  font-size: 0.78rem;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  border-left: 2px solid var(--card-border);
+  padding-left: 10px;
+}
+
+.btn-action-luxury {
+  background-color: var(--dark-luxury);
+  color: #ffffff;
+  border: 1px solid var(--dark-luxury);
+  border-radius: 9px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  transition: all 0.3s ease;
+}
+
+.btn-action-luxury:hover {
+  background-color: var(--primary-gold);
+  border-color: var(--primary-gold);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(188, 156, 100, 0.2);
+}
+
+.metric-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.card-revenue::before {
+  background: var(--accent-revenue);
+}
+.card-booking::before {
+  background: var(--accent-booking);
+}
+.card-customer::before {
+  background: var(--accent-customer);
+}
+.card-empty::before {
+  background: var(--accent-room-empty);
+}
+.card-occupied::before {
+  background: var(--accent-room-occ);
+}
+
+.metric-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #8a99ad;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.metric-value {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  margin: 0;
+  letter-spacing: -0.5px;
+  word-break: break-word;
+  max-width: 220px;
+  line-height: 1.3;
+}
+
+.metric-value span {
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.metric-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.card-revenue .metric-icon-box {
+  background: rgba(39, 174, 96, 0.08);
+  color: var(--accent-revenue);
+}
+.card-booking .metric-icon-box {
+  background: rgba(41, 128, 185, 0.08);
+  color: var(--accent-booking);
+}
+.card-customer .metric-icon-box {
+  background: rgba(230, 126, 34, 0.08);
+  color: var(--accent-customer);
+}
+.card-empty .metric-icon-box {
+  background: rgba(22, 160, 133, 0.08);
+  color: var(--accent-room-empty);
+}
+.card-occupied .metric-icon-box {
+  background: rgba(192, 57, 43, 0.08);
+  color: var(--accent-room-occ);
+}
+
+.section-indicator {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-indicator::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--card-border);
+}

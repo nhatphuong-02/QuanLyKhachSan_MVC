@@ -1,0 +1,224 @@
+:root {
+  --primary-gold: #bc9c64;
+  --primary-gold-hover: #a38552;
+  --dark-luxury: #111111;
+  --bg-body: #f8f9fa;
+  --border-color: #ededed;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-body);
+  color: #2d3748;
+}
+
+/* Header */
+.premium-header {
+  background: var(--dark-luxury);
+  padding: 18px 50px;
+  border-bottom: 3px solid var(--primary-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.premium-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.premium-logo-area img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.premium-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.premium-title span {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  color: var(--primary-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+/* Nút trang chủ */
+.btn-home-luxury {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.btn-home-luxury:hover {
+  background: #ffffff;
+  color: var(--dark-luxury);
+  border-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Card bảng */
+.luxury-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+  padding: 12px;
+  margin-bottom: 40px;
+}
+
+/* Bảng */
+.table-luxury {
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.table-luxury thead th {
+  background-color: #fafafa;
+  color: #1a1a1a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 14px 12px;
+  border-bottom: 2px solid var(--dark-luxury);
+  white-space: nowrap;
+}
+
+.table-luxury tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+.table-luxury tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table-luxury tbody tr:hover {
+  background-color: #fbfbfd;
+}
+
+.table-luxury tbody td {
+  padding: 14px 12px;
+  font-size: 0.875rem;
+}
+
+/* Ô dữ liệu */
+.id-cell {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.room-cell {
+  font-weight: 600;
+  color: var(--dark-luxury);
+}
+
+.date-cell {
+  color: #4a5568;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.date-cell i {
+  color: #a0aec0;
+  font-size: 0.82rem;
+}
+
+.price-cell {
+  font-weight: 700;
+  color: var(--primary-gold);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Badge trạng thái */
+.badge-status-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+.badge-status-luxury.unpaid {
+  background-color: #fffaf0;
+  color: #dd6b20;
+  border: 1px solid #feebc8;
+}
+
+.badge-status-luxury.paid {
+  background-color: #f0fff4;
+  color: #38a169;
+  border: 1px solid #c6f6d5;
+}
+
+/* Nút hành động */
+.btn-pay-action {
+  background: var(--primary-gold);
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-pay-action:hover {
+  background: var(--dark-luxury);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-disabled-action {
+  background: #f7fafc;
+  color: #a0aec0;
+  border: 1px solid var(--border-color);
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  cursor: default;
+}

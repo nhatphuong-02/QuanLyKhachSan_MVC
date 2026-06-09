@@ -1,0 +1,186 @@
+/* ============================================================
+   register.css — Trang Đăng Ký Tài Khoản
+   Khách Sạn Luxury
+   ============================================================ */
+
+:root {
+  --primary-gold: #bc9c64;
+  --primary-gold-hover: #a38552;
+  --dark-luxury: #111111;
+  --bg-body: #f4f6f9;
+  --border-color: #eaedf3;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-body);
+  color: #2d3748;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+  margin: 0;
+}
+
+/* ── Wrapper ── */
+.register-wrapper {
+  width: 100%;
+  max-width: 480px; /* nhỏ hơn so với 580px gốc */
+  padding: 12px;
+}
+
+/* ── Card ── */
+.luxury-register-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.card-header-luxury {
+  background: var(--dark-luxury);
+  padding: 28px 24px 24px;
+  text-align: center;
+  border-bottom: 3px solid var(--primary-gold);
+}
+
+.header-logo {
+  height: 44px;
+  width: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.card-header-luxury h3 {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.card-header-luxury p {
+  font-size: 0.72rem;
+  color: var(--primary-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px 0 0 0;
+  font-weight: 500;
+}
+
+/* ── Body ── */
+.card-body-luxury {
+  padding: 28px 32px;
+}
+
+/* ── Form groups ── */
+.form-group-luxury {
+  margin-bottom: 16px;
+}
+
+.form-group-luxury label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #718096;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ── Input wrapper ── */
+.input-group-luxury {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group-luxury i {
+  position: absolute;
+  left: 13px;
+  color: #a0aec0;
+  font-size: 0.88rem;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+/* ── Input field ── */
+.form-control-luxury {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--dark-luxury);
+  font-weight: 500;
+  padding: 10px 14px 10px 40px;
+  border-radius: 7px;
+  font-size: 0.88rem;
+  width: 100%;
+  transition: all 0.2s ease;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.form-control-luxury:focus {
+  border-color: var(--primary-gold);
+  background-color: #ffffff;
+}
+
+.form-control-luxury:focus ~ i {
+  color: var(--primary-gold);
+}
+
+/* ── Input số điện thoại / số nhà — vùng rộng hơn ── */
+input[type="tel"].form-control-luxury,
+input[name="diaChi"].form-control-luxury {
+  min-width: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ── Nút Submit ── */
+.btn-submit-luxury {
+  background: var(--primary-gold);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 14px rgba(188, 156, 100, 0.22);
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-submit-luxury:hover {
+  background: var(--dark-luxury);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* ── Footer link ── */
+.form-footer-luxury {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.82rem;
+  color: #718096;
+}
+
+.form-footer-luxury a {
+  color: var(--primary-gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.form-footer-luxury a:hover {
+  color: var(--dark-luxury);
+  text-decoration: underline;
+}

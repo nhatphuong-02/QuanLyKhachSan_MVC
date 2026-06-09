@@ -1,0 +1,208 @@
+:root {
+  --primary-gold: #bc9c64;
+  --dark-luxury: #1a1a1a;
+  --card-border: #eaedf3;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.page-header {
+  background: #ffffff;
+  padding: 13px 40px;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.page-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-back {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: #f4f6f9;
+  border: 1px solid var(--card-border);
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.btn-back:hover {
+  background-color: var(--dark-luxury);
+  color: #fff;
+}
+
+/* Card */
+.payment-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  max-width: 480px;
+  width: 100%;
+}
+
+.payment-card-header {
+  background: var(--dark-luxury);
+  padding: 20px 26px;
+  border-bottom: 3px solid var(--primary-gold);
+}
+
+.payment-card-header h5 {
+  color: #fff;
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.payment-card-header p {
+  color: #94a3b8;
+  margin: 3px 0 0;
+  font-size: 0.78rem;
+}
+
+/* Chi tiết hóa đơn */
+.invoice-detail {
+  padding: 20px 26px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.855rem;
+  border-bottom: 1px dashed var(--card-border);
+  gap: 12px;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #718096;
+  white-space: nowrap;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: var(--dark-luxury);
+  text-align: right;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 0;
+  margin-top: 6px;
+  gap: 12px;
+}
+
+.total-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--dark-luxury);
+  white-space: nowrap;
+}
+
+.total-amount {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  white-space: nowrap;
+}
+
+/* Form thanh toán */
+.payment-form {
+  padding: 0 26px 26px;
+}
+
+.method-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 9px;
+}
+
+.method-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.method-option {
+  display: none;
+}
+
+.method-option + label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.83rem;
+  font-weight: 500;
+  border: 2px solid var(--card-border);
+  background: #f8fafc;
+  color: #475569;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.method-option:checked + label {
+  border-color: var(--dark-luxury);
+  background: var(--dark-luxury);
+  color: #fff;
+}
+
+.btn-confirm {
+  background: var(--dark-luxury);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-confirm:hover {
+  background: var(--primary-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(188, 156, 100, 0.25);
+}
